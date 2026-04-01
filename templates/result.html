@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Summary - AI Notes Summarizer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="bg-light">
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h4 class="card-title mb-3">Summary</h4>
+          <pre class="summary-box">{{ summary }}</pre>
+          <div class="d-flex justify-content-between mt-3">
+            <a class="btn btn-success" href="{{ url_for('download') }}">Download Summary</a>
+            <a class="btn btn-outline-secondary" href="{{ url_for('index') }}">Back</a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-3 text-muted">Tip: For longer documents consider enabling server-side model or Lambda processing.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Flask>=2.0
+transformers>=4.0
+torch
+nltk
+boto3
+gunicorn
