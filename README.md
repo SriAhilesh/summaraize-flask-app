@@ -372,5 +372,3 @@
 
 # This project demonstrates the integration of backend development, file handling, and optional cloud storage, making it a strong foundation for scalable NLP-based web applications.
 
-
-
