@@ -2,8 +2,10 @@
 import math
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
-
 import nltk
+nltk.download('punkt')
+
+# import nltk
 
 # Safe downloader
 for pkg in ["punkt", "punkt_tab", "stopwords"]:
